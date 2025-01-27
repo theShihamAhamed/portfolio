@@ -4,6 +4,7 @@ import React from "react";
 
 import { technologies } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import Image from "next/image";
 
 const Clients = () => {
   return (
@@ -18,7 +19,7 @@ const Clients = () => {
           {technologies.map((tech) => (
             <React.Fragment key={tech.id}>
               <div>
-                <img
+                <Image
                   src={tech.img}
                   alt={tech.name}
                   width={tech.id === 4 || tech.id === 5 ? 100 : 150}
